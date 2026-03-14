@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="theme-color" content="#141414">
+<title>MindPro</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+:root {
+  --bg:#141414;
+  --sidebar:#1a1a1a;
+  --border:#333;
+  --text:#f0f0f0;
+  --sub:#888;
+  --accent:#fff;
+  --card:#1e1e1e;
+  --hover:#222;
+  --input-bg:#1e1e1e;
+  --green:#10a37f;
+}
+html,body { height:100%; background:var(--bg); color:var(--text); font-family:'Sora',sans-serif; overflow:hidden; }
+
+.app { display:flex; height:100vh; height:100dvh; }
+
+/* SIDEBAR */
+.sidebar {
+  width:240px;
+  background:var(--sidebar);
+  border-left:1px solid var(--border);
+  display:flex;
+  flex-direction:column;
+  flex-shrink:0;
+  transition:transform 0.25s cubic-bezier(.4,0,.2,1);
+}
+.sidebar-top { padding:18px 14px 12px; }
+.logo {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size:1rem;
+  font-weight:700;
+  letter-spacing:-0.3px;
+  margin-bottom:14px;
+  color:var(--text);
+}
+.logo-box {
+  width:28px; height:28px;
+  background:#0d0d0d;
+  border-radius:7px;
+  display:flex; align-items:center; justify-content:center;
+  flex-shrink:0;
+  border:1px solid #2a2a2a;
+}
+.logo-box span {
+  font-size:0.85rem;
+  font-weight:800;
+  background:linear-gradient(180deg,#ffd700 0%,#a07000 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-family:'Sora',sans-serif;
+  line-height:1;
+}
+.new-btn {
+  width:100%;
+  padding:9px 12px;
+  border-radius:8px;
+  border:1px solid var(--border);
+  background:transparent;
+  color:var(--sub);
+  font-family:'Sora',sans-serif;
+  font-size:0.8rem;
+  cursor:pointer;
+  display:flex; align-items:center; gap:8px;
+  transition:all 0.15s;
+  letter-spacing:0.2px;
+}
+.new-btn:hover { background:var(--hover); color:var(--text); border-color:#666; }
+.new-btn svg { opacity:0.5; }
+
+.section-label {
+  padding:14px 14px 6px;
+  font-size:0.65rem;
+  color:#666;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+.subjects { padding:0 8px; display:flex; flex-direction:column; gap:1px; }
+.subj-btn {
+  padding:7px 8px;
+  border-radius:6px;
+  border:none;
+  background:transparent;
+  color:var(--sub);
+  font-family:'Sora',sans-serif;
+  font-size:0.82rem;
+  cursor:pointer;
+  text-align:right;
+  transition:all 0.12s;
+  width:100%;
+  font-weight:400;
+}
+.subj-btn:hover { background:var(--hover); color:#ccc; }
+.subj-btn.active { background:var(--hover); color:var(--text); }
+
+.hist-section { flex:1; overflow-y:auto; }
+.hist-list { padding:0 8px; display:flex; flex-direction:column; gap:1px; }
+.hist-item {
+  padding:7px 8px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:0.78rem;
+  color:#666;
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  transition:all 0.12s;
+}
+.hist-item:hover { background:var(--hover); color:var(--sub); }
+.hist-item.active { background:var(--hover); color:#888; }
+
+.sidebar-footer { padding:10px; border-top:1px solid var(--border); }
+.user-row {
+  padding:8px 10px;
+  border-radius:7px;
+  display:flex; align-items:center; gap:10px;
+  cursor:pointer;
+  transition:background 0.12s;
+}
+.user-row:hover { background:var(--hover); }
+.avatar {
+  width:28px; height:28px;
+  background:#fff;
+  border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  font-size:0.75rem;
+  font-weight:800;
+  color:#000;
+  flex-shrink:0;
+  font-family:'Sora',sans-serif;
+}
+.user-name { font-size:0.82rem; font-weight:500; color:#888; }
+
+/* MAIN */
+.main { flex:1; display:flex; flex-direction:column; overflow:hidden; background:var(--bg); }
+.topbar {
+  display:none;
+  padding:12px 16px;
+  border-bottom:1px solid var(--border);
+  align-items:center;
+  justify-content:space-between;
+  background:var(--bg);
+  flex-shrink:0;
+}
+.menu-btn { background:none; border:none; color:#555; cursor:pointer; padding:4px; }
+
+/* CONTENT */
+.content {
+  flex:1;
+  overflow-y:auto;
+  padding:32px max(20px, calc(50% - 340px));
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+
+.welcome {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  flex:1;
+  text-align:center;
+  gap:20px;
+  min-height:300px;
+}
+.welcome-logo {
+  width:64px; height:64px;
+  background:#0d0d0d;
+  border-radius:16px;
+  display:flex; align-items:center; justify-content:center;
+  border:1px solid #2a2a2a;
+}
+.welcome-logo span {
+  font-size:2rem;
+  font-weight:800;
+  background:linear-gradient(180deg,#ffd700 0%,#a07000 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  font-family:'Sora',sans-serif;
+  line-height:1;
+}
+.welcome h1 {
+  font-size:1.6rem;
+  font-weight:700;
+  color:var(--text);
+  letter-spacing:-0.5px;
+}
+.welcome p { color:#777; font-size:0.88rem; line-height:1.7; font-weight:300; }
+
+/* Q&A */
+.answer-wrap { display:none; flex-direction:column; }
+.answer-wrap.visible { display:flex; }
+
+.q-block {
+  padding:28px 0 20px;
+  border-bottom:1px solid var(--border);
+}
+.q-tag {
+  font-size:0.65rem;
+  color:#666;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:10px;
+}
+.q-text {
+  font-size:0.95rem;
+  color:#888;
+  line-height:1.7;
+  font-weight:300;
+}
+.q-img { max-width:180px; border-radius:8px; margin-top:10px; display:block; border:1px solid var(--border); }
+
+.loading {
+  display:none;
+  align-items:center;
+  gap:8px;
+  padding:28px 0;
+  color:#666;
+  font-size:0.8rem;
+  letter-spacing:0.5px;
+}
+.loading.visible { display:flex; }
+.ld { width:5px; height:5px; background:#333; border-radius:50%; animation:ld 1.2s infinite ease-in-out; }
+.ld:nth-child(2){animation-delay:0.2s} .ld:nth-child(3){animation-delay:0.4s}
+@keyframes ld { 0%,80%,100%{opacity:0.3;transform:scale(0.8)} 40%{opacity:1;transform:scale(1)} }
+
+.a-block { padding:28px 0; }
+.a-tag {
+  font-size:0.65rem;
+  color:#666;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  margin-bottom:12px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.copy-btn {
+  background:none;
+  border:1px solid #1c1c1c;
+  color:#666;
+  font-size:0.7rem;
+  padding:3px 10px;
+  border-radius:4px;
+  cursor:pointer;
+  font-family:'Sora',sans-serif;
+  transition:all 0.12s;
+  letter-spacing:0.3px;
+}
+.copy-btn:hover { color:#888; border-color:#666; }
+.answer-card {
+  font-size:1.08rem;
+  color:#ddd;
+  line-height:2;
+  white-space:pre-wrap;
+  word-break:break-word;
+  font-weight:400;
+}
+.cursor { display:inline-block; width:2px; height:14px; background:#fff; vertical-align:middle; animation:blink 0.7s infinite; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+
+/* INPUT */
+.input-area {
+  padding:12px max(16px, calc(50% - 340px)) 16px;
+  border-top:1px solid var(--border);
+  background:var(--bg);
+  flex-shrink:0;
+}
+.img-preview { display:none; position:relative; margin-bottom:8px; }
+.img-preview.visible { display:inline-block; }
+.img-preview img { height:60px; border-radius:6px; border:1px solid var(--border); }
+.rm-img { position:absolute; top:-5px; right:-5px; width:18px; height:18px; background:#1c1c1c; border:none; border-radius:50%; color:#888; font-size:0.6rem; cursor:pointer; }
+
+.input-row { display:flex; gap:8px; align-items:flex-end; }
+.input-box {
+  flex:1;
+  background:var(--input-bg);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:11px 12px;
+  display:flex; align-items:flex-end; gap:8px;
+  transition:border-color 0.15s;
+}
+.input-box:focus-within { border-color:#555; }
+.chat-inp {
+  flex:1;
+  background:none;
+  border:none;
+  color:var(--text);
+  font-family:'Sora',sans-serif;
+  font-size:0.9rem;
+  resize:none;
+  outline:none;
+  max-height:120px;
+  min-height:20px;
+  line-height:1.5;
+  direction:rtl;
+  overflow-y:auto;
+  font-weight:300;
+}
+.chat-inp::placeholder { color:#555; }
+.ibtns { display:flex; gap:2px; align-items:flex-end; }
+.ibtn, .mic-btn {
+  width:30px; height:30px;
+  border-radius:6px;
+  border:none;
+  background:transparent;
+  color:#666;
+  cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:all 0.12s;
+}
+.ibtn:hover { background:var(--hover); color:#666; }
+.mic-btn:hover { color:#666; }
+.mic-btn.recording { color:#ef4444; animation:micPulse 1s infinite; }
+@keyframes micPulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
+
+.send-btn {
+  width:36px; height:36px;
+  border-radius:8px;
+  border:none;
+  background:#fff;
+  color:#000;
+  cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:all 0.12s;
+  flex-shrink:0;
+}
+.send-btn:hover { background:#e0e0e0; }
+.send-btn:disabled { background:#111; color:#666; cursor:not-allowed; }
+.hint { text-align:center; font-size:0.65rem; color:#555; margin-top:8px; letter-spacing:0.3px; }
+
+/* CAMERA */
+.cam-modal { display:none; position:fixed; inset:0; background:rgba(20,20,20,0.97); z-index:500; align-items:center; justify-content:center; flex-direction:column; gap:16px; padding:24px; }
+.cam-modal.open { display:flex; }
+.cam-title { font-size:0.85rem; color:#888; letter-spacing:1px; font-weight:400; text-transform:uppercase; }
+.cam-video { width:100%; max-width:400px; border-radius:10px; background:#000; border:1px solid var(--border); }
+.cam-btns { display:flex; gap:10px; }
+.cam-snap { padding:10px 28px; border-radius:50px; border:none; background:#fff; color:#000; font-family:'Sora',sans-serif; font-size:0.85rem; font-weight:600; cursor:pointer; }
+.cam-cancel { padding:10px 22px; border-radius:50px; border:1px solid var(--border); background:transparent; color:#555; font-family:'Sora',sans-serif; font-size:0.85rem; cursor:pointer; }
+canvas#snap { display:none; }
+
+.toast { position:fixed; bottom:80px; left:50%; transform:translateX(-50%) translateY(10px); background:#111; color:#888; padding:8px 16px; border-radius:6px; font-size:0.75rem; font-weight:500; opacity:0; transition:all 0.25s; z-index:999; white-space:nowrap; border:1px solid var(--border); letter-spacing:0.3px; }
+.toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+.overlay { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); z-index:99; }
+.overlay.open { display:block; }
+
+/* LOGIN */
+.login-screen {
+  position:fixed; inset:0;
+  background:#111;
+  z-index:9999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  gap:0;
+}
+.login-box {
+  width:100%;
+  max-width:360px;
+  padding:40px 32px;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.login-logo {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:12px;
+  margin-bottom:8px;
+}
+.login-logo-box {
+  width:52px; height:52px;
+  background:#0d0d0d;
+  border-radius:14px;
+  display:flex; align-items:center; justify-content:center;
+  border:1px solid #2a2a2a;
+}
+.login-logo-box span { font-size:1.6rem; font-weight:800; background:linear-gradient(180deg,#ffd700 0%,#a07000 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; font-family:'Sora',sans-serif; }
+.login-title { font-size:1.3rem; font-weight:700; color:#fff; text-align:center; }
+.login-sub { font-size:0.82rem; color:#555; text-align:center; margin-top:-8px; }
+.login-input {
+  width:100%;
+  padding:12px 14px;
+  background:#1a1a1a;
+  border:1px solid #2a2a2a;
+  border-radius:8px;
+  color:#fff;
+  font-family:'Sora',sans-serif;
+  font-size:0.9rem;
+  outline:none;
+  transition:border-color 0.15s;
+  direction:ltr;
+}
+.login-input:focus { border-color:#444; }
+.login-input::placeholder { color:#333; }
+.login-btn {
+  width:100%;
+  padding:13px;
+  background:#fff;
+  color:#000;
+  border:none;
+  border-radius:8px;
+  font-family:'Sora',sans-serif;
+  font-size:0.9rem;
+  font-weight:700;
+  cursor:pointer;
+  transition:all 0.15s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:4px;
+  flex-direction:row-reverse;
+}
+.login-btn:hover { background:#e8e8e8; transform:translateY(-1px); box-shadow:0 4px 20px rgba(255,255,255,0.1); }
+.login-error { font-size:0.78rem; color:#ef4444; text-align:center; display:none; }
+
+.login-screen::before {
+  content:'';
+  position:absolute;
+  width:400px; height:400px;
+  background:radial-gradient(circle, rgba(255,255,255,0.03) 0%, transparent 70%);
+  top:50%; left:50%;
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+.weather-card {
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:24px;
+  margin-top:20px;
+  display:none;
+}
+.weather-card.visible { display:block; }
+.weather-main { display:flex; align-items:center; gap:16px; margin-bottom:20px; }
+.weather-temp { font-size:3rem; font-weight:700; color:var(--text); line-height:1; }
+.weather-info { display:flex; flex-direction:column; gap:4px; }
+.weather-city { font-size:0.9rem; font-weight:600; color:var(--text); }
+.weather-desc { font-size:0.8rem; color:var(--sub); }
+.weather-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-bottom:16px; }
+.weather-item { background:var(--hover); border-radius:8px; padding:12px; }
+.weather-item-label { font-size:0.65rem; color:var(--sub); text-transform:uppercase; letter-spacing:0.8px; margin-bottom:4px; }
+.weather-item-value { font-size:0.95rem; font-weight:600; color:var(--text); }
+.weather-tomorrow { border-top:1px solid var(--border); padding-top:16px; }
+.weather-tomorrow-title { font-size:0.65rem; color:var(--sub); text-transform:uppercase; letter-spacing:0.8px; margin-bottom:10px; }
+.weather-tomorrow-row { display:flex; justify-content:space-between; align-items:center; }
+.weather-tomorrow-temp { font-size:1.1rem; font-weight:600; color:var(--text); }
+.weather-loading { text-align:center; padding:20px; color:var(--sub); font-size:0.85rem; }
+
+::-webkit-scrollbar { width:3px; }
+::-webkit-scrollbar-thumb { background:#1a1a1a; border-radius:3px; }
+
+/* ANIMATIONS */
+@keyframes fadeInUp {
+  from { opacity:0; transform:translateY(16px); }
+  to { opacity:1; transform:translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity:0; }
+  to { opacity:1; }
+}
+@keyframes slideInRight {
+  from { opacity:0; transform:translateX(20px); }
+  to { opacity:1; transform:translateX(0); }
+}
+@keyframes scaleIn {
+  from { opacity:0; transform:scale(0.95); }
+  to { opacity:1; transform:scale(1); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.welcome { animation: fadeInUp 0.5s ease both; }
+.welcome-logo { animation: scaleIn 0.4s ease both; }
+.welcome h1 { animation: fadeInUp 0.5s 0.1s ease both; }
+.welcome p { animation: fadeInUp 0.5s 0.2s ease both; }
+
+.q-block { animation: fadeInUp 0.35s ease both; }
+.a-block { animation: fadeInUp 0.35s 0.1s ease both; }
+
+.login-box { animation: fadeInUp 0.5s ease both; }
+.login-logo { animation: scaleIn 0.4s ease both; }
+
+.subj-btn {
+  transition: all 0.15s cubic-bezier(.4,0,.2,1);
+}
+.subj-btn:hover {
+  transform: translateX(-3px);
+}
+
+.send-btn {
+  transition: all 0.2s cubic-bezier(.4,0,.2,1);
+}
+.send-btn:not(:disabled):hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 16px rgba(255,255,255,0.15);
+}
+.send-btn:not(:disabled):active {
+  transform: scale(0.95);
+}
+
+.input-box {
+  transition: all 0.2s ease;
+}
+.input-box:focus-within {
+  border-color:#3a3a3a;
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.03);
+}
+
+.answer-card {
+  animation: fadeIn 0.3s ease;
+}
+
+.weather-card {
+  animation: fadeInUp 0.35s ease both;
+}
+.weather-item {
+  transition: all 0.15s ease;
+}
+.weather-item:hover {
+  background: #2a2a2a;
+  transform: translateY(-2px);
+}
+
+.login-btn {
+  transition: all 0.2s cubic-bezier(.4,0,.2,1) !important;
+}
+.login-btn:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(255,255,255,0.12) !important;
+}
+.login-btn:active {
+  transform: translateY(0) !important;
+}
+
+.new-btn {
+  transition: all 0.15s ease;
+}
+.new-btn:hover {
+  transform: translateY(-1px);
+}
+
+.hist-item {
+  transition: all 0.12s ease;
+}
+
+/* Loading shimmer */
+.loading span {
+  background: linear-gradient(90deg, #333 0%, #555 50%, #333 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 1.5s linear infinite;
+}
+
+/* PRO MODE */
+.pro-badge {
+  display:inline-flex;
+  align-items:center;
+  gap:4px;
+  background:linear-gradient(135deg,#b8860b,#ffd700,#b8860b);
+  background-size:200% auto;
+  animation:goldShimmer 2s linear infinite;
+  color:#000;
+  font-size:0.6rem;
+  font-weight:800;
+  padding:2px 7px;
+  border-radius:20px;
+  letter-spacing:0.8px;
+  text-transform:uppercase;
+}
+@keyframes goldShimmer {
+  0% { background-position:0% center; }
+  100% { background-position:200% center; }
+}
+.pro-modal {
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.85);
+  z-index:9000;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+.pro-modal.open { display:flex; }
+.pro-box {
+  background:#0f0f0f;
+  border:1px solid #2a2000;
+  border-radius:16px;
+  padding:36px 32px;
+  max-width:360px;
+  width:100%;
+  text-align:center;
+  animation:scaleIn 0.3s ease;
+  position:relative;
+  overflow:hidden;
+}
+.pro-box::before {
+  content:'';
+  position:absolute;
+  top:0; left:0; right:0;
+  height:2px;
+  background:linear-gradient(90deg,transparent,#ffd700,transparent);
+}
+.pro-crown {
+  font-size:2.5rem;
+  margin-bottom:12px;
+  display:block;
+}
+.pro-title {
+  font-size:1.4rem;
+  font-weight:800;
+  background:linear-gradient(135deg,#b8860b,#ffd700,#b8860b);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-size:200% auto;
+  animation:goldShimmer 2s linear infinite;
+  margin-bottom:6px;
+}
+.pro-sub {
+  font-size:0.82rem;
+  color:#666;
+  margin-bottom:24px;
+  line-height:1.6;
+}
+.pro-features {
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin-bottom:28px;
+  text-align:right;
+}
+.pro-feature {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 14px;
+  background:#1a1500;
+  border:1px solid #2a2000;
+  border-radius:8px;
+  font-size:0.82rem;
+  color:#ccc;
+}
+.pro-feature-icon {
+  width:28px;
+  height:28px;
+  background:linear-gradient(135deg,#b8860b,#ffd700);
+  border-radius:6px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:0.85rem;
+  flex-shrink:0;
+  color:#000;
+  font-weight:700;
+}
+.pro-activate-btn {
+  width:100%;
+  padding:13px;
+  background:linear-gradient(135deg,#b8860b,#ffd700,#b8860b);
+  background-size:200% auto;
+  animation:goldShimmer 2s linear infinite;
+  color:#000;
+  border:none;
+  border-radius:8px;
+  font-family:'Sora',sans-serif;
+  font-size:0.9rem;
+  font-weight:800;
+  cursor:pointer;
+  letter-spacing:0.3px;
+  transition:transform 0.15s,box-shadow 0.15s;
+}
+.pro-activate-btn:hover {
+  transform:translateY(-2px);
+  box-shadow:0 8px 24px rgba(255,215,0,0.2);
+}
+.pro-close {
+  margin-top:12px;
+  background:none;
+  border:none;
+  color:#444;
+  font-family:'Sora',sans-serif;
+  font-size:0.78rem;
+  cursor:pointer;
+  width:100%;
+}
+.pro-close:hover { color:#666; }
+
+/* PRO active styles */
+body.pro-active .logo { position:relative; }
+body.pro-active .sidebar { border-left-color:#2a2000; }
+body.pro-active .sidebar-top { background:linear-gradient(180deg,#0f0d00,transparent); }
+body.pro-active .subj-btn.active { color:#ffd700 !important; }
+body.pro-active .send-btn { background:linear-gradient(135deg,#b8860b,#ffd700); color:#000; }
+body.pro-active .send-btn:not(:disabled):hover { box-shadow:0 4px 16px rgba(255,215,0,0.3); }
+body.pro-active .a-tag span { color:#ffd700; }
+body.pro-active .input-box:focus-within { border-color:#2a2000; box-shadow:0 0 0 3px rgba(255,215,0,0.05); }
+body.pro-active .cursor { background:#ffd700; }
+
+@media(max-width:700px) {
+  .sidebar { position:fixed; right:0; top:0; bottom:0; z-index:100; transform:translateX(100%); }
+  .sidebar.open { transform:translateX(0); }
+  .topbar { display:flex; }
+  .content { padding:20px 16px; }
+  .input-area { padding:10px 12px 14px; }
+}
+</style>
+</head>
+<body>
+<div class="login-screen" id="loginScreen">
+  <div class="login-box">
+    <div class="login-logo">
+      <div class="login-logo-box"><span>M</span></div>
+      <div class="login-title">Welcome to MindPro</div>
+      <div class="login-sub">Enter your email to continue</div>
+    </div>
+    <div style="position:relative">
+      <svg style="position:absolute;right:14px;top:50%;transform:translateY(-50%);opacity:0.3" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      <input class="login-input" id="loginEmail" type="email" placeholder="your@email.com"
+        style="padding-right:42px"
+        onkeydown="if(event.key==='Enter')doLogin()"/>
+    </div>
+    <button class="login-btn" onclick="doLogin()">
+      Continue
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" style="margin-right:8px"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </button>
+    <div class="login-error" id="loginError">⚠ Invalid email, please try again</div>
+    <div style="text-align:center;font-size:0.72rem;color:#333;margin-top:4px">Your data is secure and private</div>
+  </div>
+</div>
+
+<div class="app" id="mainApp" style="display:none">
+
+  <div class="sidebar" id="sidebar">
+    <div class="sidebar-top">
+      <div class="logo">
+        <div class="logo-box"><span>M</span></div>
+        MindPro
+        <span class="pro-badge" id="proBadge" style="display:none">PRO</span>
+      </div>
+      <button class="new-btn" onclick="newSession()">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        שאלה חדשה
+      </button>
+    </div>
+    <div class="section-label">מקצועות</div>
+    <div class="subjects">
+      <button class="subj-btn" onclick="showWeather()" id="weatherBtn">מזג אוויר</button>
+      <button class="subj-btn" onclick="setSubject(this,'פתור לי את התרגיל: ')">מתמטיקה</button>
+      <button class="subj-btn" onclick="setSubject(this,'כתוב לי סיכום על: ')">היסטוריה</button>
+      <button class="subj-btn" onclick="setSubject(this,'תקן ושפר את הטקסט: ')">עברית</button>
+      <button class="subj-btn" onclick="setSubject(this,'Help me with: ')">אנגלית</button>
+      <button class="subj-btn" onclick="setSubject(this,'הסבר לי: ')">מדעים</button>
+      <button class="subj-btn" onclick="setSubject(this,'פתור לי: ')">פיזיקה</button>
+      <button class="subj-btn" onclick="setSubject(this,'הסבר לי: ')">כימיה</button>
+      <button class="subj-btn" onclick="setSubject(this,'ספר לי על: ')">גיאוגרפיה</button>
+      <button class="subj-btn" onclick="setSubject(this,'נתח לי: ')">ספרות</button>
+      <button class="subj-btn" onclick="setSubject(this,'הסבר לי את: ')">תנ״ך</button>
+    </div>
+    <div class="hist-section">
+      <div class="section-label">היסטוריה</div>
+      <div class="hist-list" id="histList"></div>
+    </div>
+    <div class="sidebar-footer">
+      <div class="user-row" onclick="openProModal()" style="cursor:pointer">
+        <div class="avatar">M</div>
+        <span class="user-name">MindPro</span>
+        <span class="pro-badge" id="proBadgeSidebar" style="display:none;margin-right:auto">PRO</span>
+        <button id="upgradeBtn" style="margin-right:auto;background:linear-gradient(135deg,#b8860b,#ffd700);color:#000;border:none;border-radius:5px;font-family:Sora,sans-serif;font-size:0.65rem;font-weight:800;padding:3px 8px;cursor:pointer;letter-spacing:0.5px">PRO ↑</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+  <div class="main">
+    <div class="topbar">
+      <button class="menu-btn" onclick="toggleSidebar()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <div class="logo" style="font-size:0.9rem">
+        <div class="logo-box" style="width:22px;height:22px;border-radius:5px"><span style="font-size:0.7rem">M</span></div>
+        MindPro
+      </div>
+      <div style="width:26px"></div>
+    </div>
+
+    <div class="content" id="content">
+      <div class="welcome" id="welcome">
+        <div class="welcome-logo"><span>M</span></div>
+        <div>
+          <h1>MindPro</h1>
+          <p>עוזר הלימודים שלך<br>שאל כל שאלה או בחר מקצוע</p>
+        </div>
+      </div>
+
+      <div class="weather-card" id="weatherCard">
+        <div style="display:flex;gap:8px;margin-bottom:16px">
+          <input id="cityInput" type="text" placeholder="חפש עיר... (תל אביב, ירושלים, ניו יורק)" 
+            style="flex:1;background:var(--hover);border:1px solid var(--border);border-radius:8px;padding:9px 12px;color:var(--text);font-family:Sora,sans-serif;font-size:0.85rem;outline:none;direction:rtl"
+            onkeydown="if(event.key==='Enter')searchCity()"/>
+          <button onclick="searchCity()" style="padding:9px 16px;background:#fff;color:#000;border:none;border-radius:8px;font-family:Sora,sans-serif;font-size:0.82rem;font-weight:600;cursor:pointer">חפש</button>
+          <button onclick="getMyLocation()" style="padding:9px 12px;background:var(--hover);color:var(--sub);border:1px solid var(--border);border-radius:8px;font-family:Sora,sans-serif;font-size:0.78rem;cursor:pointer" title="מיקומי">📍</button>
+        </div>
+        <div class="weather-loading" id="weatherLoading" style="display:none">טוען...</div>
+        <div id="weatherContent" style="display:none">
+          <div class="weather-main">
+            <div class="weather-temp"><span id="wTemp">--</span>°</div>
+            <div class="weather-info">
+              <div class="weather-city" id="wCity">אילת, ישראל</div>
+              <div class="weather-desc" id="wDesc">--</div>
+            </div>
+          </div>
+          <div class="weather-grid">
+            <div class="weather-item">
+              <div class="weather-item-label">מרגיש כמו</div>
+              <div class="weather-item-value"><span id="wFeels">--</span>°</div>
+            </div>
+            <div class="weather-item">
+              <div class="weather-item-label">לחות</div>
+              <div class="weather-item-value"><span id="wHumidity">--</span>%</div>
+            </div>
+            <div class="weather-item">
+              <div class="weather-item-label">רוח</div>
+              <div class="weather-item-value"><span id="wWind">--</span> קמ"ש</div>
+            </div>
+            <div class="weather-item">
+              <div class="weather-item-label">UV</div>
+              <div class="weather-item-value"><span id="wUV">--</span></div>
+            </div>
+          </div>
+          <div class="weather-tomorrow">
+            <div class="weather-tomorrow-title">מחר</div>
+            <div class="weather-tomorrow-row">
+              <span style="color:var(--sub);font-size:0.85rem" id="wTomDesc">--</span>
+              <div>
+                <span style="color:var(--sub);font-size:0.85rem" id="wTomMin">--</span>°
+                <span style="color:var(--text);font-size:0.85rem;margin-right:6px"> / </span>
+                <span class="weather-tomorrow-temp" id="wTomMax">--</span>°
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="answer-wrap" id="answerWrap">
+        <div class="q-block">
+          <div class="q-tag">שאלה</div>
+          <div class="q-text" id="qText"></div>
+          <img id="qImg" class="q-img" style="display:none" src="" alt=""/>
+        </div>
+        <div class="loading" id="loading">
+          <div class="ld"></div><div class="ld"></div><div class="ld"></div>
+          <span>חושב</span>
+        </div>
+        <div class="a-block" id="answerOuter" style="display:none">
+          <div class="a-tag">
+            <span>תשובה</span>
+            <button class="copy-btn" id="copyBtn" onclick="copyAnswer()">העתק</button>
+          </div>
+          <div class="answer-card" id="answerCard"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <div class="img-preview" id="imgPreview">
+        <img id="imgThumb" src="" alt=""/>
+        <button class="rm-img" onclick="removeImage()">✕</button>
+      </div>
+      <div class="input-row">
+        <div class="input-box">
+          <div class="ibtns">
+            <button class="mic-btn" id="micBtn" onclick="toggleMic()" title="דבר">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </button>
+            <button class="ibtn" onclick="openCamera()" title="צלם">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+            </button>
+            <label class="ibtn" for="fileIn" style="cursor:pointer" title="העלה">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </label>
+            <input type="file" id="fileIn" accept="image/*" style="display:none" onchange="handleFile(event)"/>
+          </div>
+          <textarea class="chat-inp" id="chatInp" placeholder="שאל כל שאלה..." rows="1"
+            onkeydown="if(event.key==='Enter'&&!event.shiftKey){event.preventDefault();solve()}"
+            oninput="this.style.height='auto';this.style.height=this.scrollHeight+'px'"></textarea>
+        </div>
+        <button class="send-btn" id="sendBtn" onclick="solve()" disabled>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+        </button>
+      </div>
+      <div class="hint">MindPro · AI לימודים</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="pro-modal" id="proModal">
+  <div class="pro-box">
+    <span class="pro-crown">👑</span>
+    <div class="pro-title">MindPro PRO</div>
+    <div class="pro-sub">Enter your PRO code to unlock</div>
+    <div class="pro-features">
+      <div class="pro-feature">
+        <div class="pro-feature-icon">✦</div>
+        Golden PRO design
+      </div>
+      <div class="pro-feature">
+        <div class="pro-feature-icon">∞</div>
+        Unlimited questions
+      </div>
+      <div class="pro-feature">
+        <div class="pro-feature-icon">⚡</div>
+        Faster answers
+      </div>
+    </div>
+    <input id="proCodeInput" type="text" placeholder="Enter PRO code..."
+      style="width:100%;padding:12px 14px;background:#1a1500;border:1px solid #2a2000;border-radius:8px;color:#ffd700;font-family:Sora,sans-serif;font-size:0.9rem;outline:none;text-align:center;letter-spacing:2px;text-transform:uppercase;margin-bottom:12px"
+      onkeydown="if(event.key==='Enter')activatePro()"/>
+    <div id="proCodeError" style="font-size:0.75rem;color:#ef4444;text-align:center;margin-bottom:10px;display:none">Invalid code. Try again.</div>
+    <button class="pro-activate-btn" onclick="activatePro()">✦ Activate PRO</button>
+    <button class="pro-close" onclick="closeProModal()">Maybe later</button>
+  </div>
+</div>
+
+<div class="cam-modal" id="camModal">
+  <div class="cam-title">כוון לתרגיל</div>
+  <video class="cam-video" id="camVid" autoplay playsinline></video>
+  <div class="cam-btns">
+    <button class="cam-snap" onclick="snapPhoto()">צלם</button>
+    <button class="cam-cancel" onclick="closeCamera()">ביטול</button>
+  </div>
+</div>
+<canvas id="snap"></canvas>
+<div class="toast" id="toast"></div>
+
+<script>
+// LOGIN
+function doLogin() {
+  const email = document.getElementById('loginEmail').value.trim();
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    document.getElementById('loginError').style.display = 'block';
+    return;
+  }
+  localStorage.setItem('mp_user', email);
+  document.getElementById('loginScreen').style.display = 'none';
+  document.getElementById('mainApp').style.display = 'flex';
+}
+
+// Check if already logged in
+window.addEventListener('load', () => {
+  const saved = localStorage.getItem('mp_user');
+  if (saved) {
+    document.getElementById('loginScreen').style.display = 'none';
+    document.getElementById('mainApp').style.display = 'flex';
+  }
+});
+
+let imgData = null, isLoading = false, lastAnswer = '', hist = [], conversationHistory = [];
+
+function toggleMic() { if (isRecording) stopRecording(); else startRecording(); }
+
+function setSubject(btn, prefix) {
+  closeSidebar();
+  document.querySelectorAll('.subj-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  const inp = document.getElementById('chatInp');
+  inp.value = prefix;
+  inp.focus();
+  inp.style.height = 'auto';
+  inp.style.height = inp.scrollHeight + 'px';
+  document.getElementById('sendBtn').disabled = false;
+}
+
+function getSystemPrompt() {
+  const today = new Date().toLocaleDateString('he-IL', {weekday:'long', year:'numeric', month:'long', day:'numeric'});
+  return `You are MindPro - a precise, intelligent study assistant.
+CRITICAL: Always respond in the EXACT same language the user writes in.
+Today's date: ${today}
+
+For weather questions: Use your knowledge to give realistic current weather estimates for Israeli cities based on the current date and season. Give temperature in Celsius, mention if it's hot/cold/pleasant, humidity, and what to wear. Be specific and helpful even without real-time data - you know Israel's climate well.
+
+Tone: Professional but warm. Direct and clear.
+Structure: Always use numbered steps for problems. Show all work.
+Format: Clean, easy to read. Use line breaks generously.
+Math: Show every step with clear notation.
+Writing: Give full corrections and examples.
+End each answer with one brief encouraging line.`;
+}
+
+function detectLang(text) {
+  const hebrew = (text.match(/[֐-׿]/g) || []).length;
+  const arabic = (text.match(/[؀-ۿ]/g) || []).length;
+  const latin = (text.match(/[a-zA-Z]/g) || []).length;
+  const total = text.length;
+  if (hebrew / total > 0.2) return '';
+  if (arabic / total > 0.2) return '[IMPORTANT: Respond in Arabic only]';
+  if (latin / total > 0.3) return '[IMPORTANT: Respond in English only]';
+  return '';
+}
+
+async function solve() {
+  const inp = document.getElementById('chatInp');
+  const q = inp.value.trim();
+  if ((!q && !imgData) || isLoading) return;
+
+  isLoading = true;
+  document.getElementById('sendBtn').disabled = true;
+  document.getElementById('welcome').style.display = 'none';
+  document.getElementById('answerWrap').classList.add('visible');
+
+  document.getElementById('qText').textContent = q || '';
+  const qImg = document.getElementById('qImg');
+  if (imgData) { qImg.src = 'data:image/jpeg;base64,' + imgData; qImg.style.display = 'block'; }
+  else { qImg.style.display = 'none'; }
+
+  document.getElementById('answerOuter').style.display = 'none';
+  document.getElementById('answerCard').textContent = '';
+  document.getElementById('loading').classList.add('visible');
+
+  inp.value = ''; inp.style.height = 'auto';
+  const img = imgData; removeImage();
+
+  try {
+    const OR_KEY = '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';
+    let msgContent = [];
+    if (img) msgContent.push({ type: 'image_url', image_url: { url: 'data:image/jpeg;base64,' + img } });
+    msgContent.push({ type: 'text', text: q || 'פתור/הסבר את התמונה צעד אחר צעד' });
+
+    // Detect language and add instruction
+    const langInstruction = q ? detectLang(q) : '';
+    const userMsg = img ? msgContent : (q || 'פתור/הסבר');
+    const userMsgWithLang = langInstruction ? 
+      (img ? [...msgContent, {type:'text', text: langInstruction}] : q + '\n\n' + langInstruction) 
+      : userMsg;
+
+    // Add to conversation history
+    conversationHistory.push({ role: 'user', content: userMsgWithLang });
+    // Keep last 20 messages to avoid token limit
+    if (conversationHistory.length > 20) conversationHistory = conversationHistory.slice(-20);
+
+    const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer ' + OR_KEY,
+        'HTTP-Referer': 'https://illustrious-puppy-268e53.netlify.app',
+        'X-Title': 'MindPro'
+      },
+      body: JSON.stringify({
+        model: 'google/gemini-2.0-flash-001',
+        max_tokens: 3000,
+        messages: [
+          { role: 'system', content: getSystemPrompt() },
+          ...conversationHistory
+        ]
+      })
+    });
+
+    const data = await res.json();
+    if (!res.ok) throw new Error(JSON.stringify(data));
+    const answer = data.choices?.[0]?.message?.content || 'לא הצלחתי לקבל תשובה.';
+    lastAnswer = answer;
+    conversationHistory.push({ role: 'assistant', content: answer });
+
+    document.getElementById('loading').classList.remove('visible');
+    document.getElementById('answerOuter').style.display = 'block';
+    await typeWriter(answer);
+    saveHist(q || 'תמונה');
+
+  } catch(e) {
+    document.getElementById('loading').classList.remove('visible');
+    document.getElementById('answerOuter').style.display = 'block';
+    document.getElementById('answerCard').textContent = 'שגיאה: ' + e.message;
+  }
+  isLoading = false;
+  document.getElementById('sendBtn').disabled = !document.getElementById('chatInp').value.trim() && !imgData;
+}
+
+function renderAnswer(text) {
+  const card = document.getElementById('answerCard');
+  // Convert markdown links [text](url) to clickable links
+  const html = text
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^\)]+)\)/g, '<a href="$2" target="_blank" style="color:#fff;text-decoration:underline;text-underline-offset:3px">$1</a>');
+  card.innerHTML = html;
+}
+
+async function typeWriter(text) {
+  const card = document.getElementById('answerCard');
+  card.textContent = '';
+  const cursor = document.createElement('span');
+  cursor.className = 'cursor';
+  card.appendChild(cursor);
+  let i = 0;
+  await new Promise(resolve => {
+    const iv = setInterval(() => {
+      if (i < text.length) {
+        card.insertBefore(document.createTextNode(text[i]), cursor);
+        i++;
+        if (i % 30 === 0) document.getElementById('content').scrollTop = document.getElementById('content').scrollHeight;
+      } else { clearInterval(iv); cursor.remove(); resolve(); }
+    }, 5);
+  });
+  // After typewriter, render with links
+  renderAnswer(text);
+  document.getElementById('content').scrollTop = document.getElementById('content').scrollHeight;
+}
+
+function newSession() {
+  document.getElementById('welcome').style.display = '';
+  document.getElementById('answerWrap').classList.remove('visible');
+  document.getElementById('weatherCard').classList.remove('visible');
+  document.getElementById('answerCard').textContent = '';
+  document.getElementById('chatInp').value = '';
+  document.getElementById('sendBtn').disabled = true;
+  conversationHistory = [];
+  removeImage(); closeSidebar();
+  document.querySelectorAll('.subj-btn').forEach(b => b.classList.remove('active'));
+}
+
+function saveHist(text) {
+  hist.unshift({ text: text.slice(0, 36) });
+  if (hist.length > 20) hist.pop();
+  const l = document.getElementById('histList');
+  l.innerHTML = '';
+  hist.forEach((h, i) => {
+    const d = document.createElement('div');
+    d.className = 'hist-item' + (i === 0 ? ' active' : '');
+    d.textContent = h.text;
+    l.appendChild(d);
+  });
+}
+
+function copyAnswer() {
+  navigator.clipboard.writeText(lastAnswer).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = 'הועתק';
+    setTimeout(() => btn.textContent = 'העתק', 2000);
+  });
+}
+
+let stream = null;
+async function openCamera() {
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: 'environment' } } });
+    document.getElementById('camVid').srcObject = stream;
+    document.getElementById('camModal').classList.add('open');
+  } catch { document.getElementById('fileIn').click(); }
+}
+function closeCamera() {
+  document.getElementById('camModal').classList.remove('open');
+  if (stream) { stream.getTracks().forEach(t => t.stop()); stream = null; }
+}
+function snapPhoto() {
+  const v = document.getElementById('camVid'), c = document.getElementById('snap');
+  c.width = v.videoWidth; c.height = v.videoHeight;
+  c.getContext('2d').drawImage(v, 0, 0);
+  setImage(c.toDataURL('image/jpeg', 0.85));
+  closeCamera(); showToast('צולם');
+}
+function handleFile(e) {
+  const f = e.target.files[0]; if (!f) return;
+  const r = new FileReader();
+  r.onload = ev => { setImage(ev.target.result); showToast('הועלה'); };
+  r.readAsDataURL(f); e.target.value = '';
+}
+function setImage(url) {
+  imgData = url.split(',')[1];
+  document.getElementById('imgThumb').src = url;
+  document.getElementById('imgPreview').classList.add('visible');
+  document.getElementById('sendBtn').disabled = false;
+}
+function removeImage() {
+  imgData = null;
+  document.getElementById('imgPreview').classList.remove('visible');
+  document.getElementById('imgThumb').src = '';
+  document.getElementById('sendBtn').disabled = !document.getElementById('chatInp').value.trim();
+}
+
+let recognition = null, isRecording = false;
+function startRecording() {
+  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+  if (!SR) { showToast('נסה Chrome'); return; }
+  recognition = new SR();
+  recognition.lang = 'he-IL'; recognition.continuous = false; recognition.interimResults = true;
+  recognition.onstart = () => {
+    isRecording = true;
+    document.getElementById('micBtn').classList.add('recording');
+    showToast('מקשיב...');
+  };
+  recognition.onresult = (e) => {
+    const t = Array.from(e.results).map(r => r[0].transcript).join('');
+    document.getElementById('chatInp').value = t;
+    document.getElementById('sendBtn').disabled = false;
+  };
+  recognition.onend = () => {
+    stopRecording();
+    if (document.getElementById('chatInp').value.trim()) setTimeout(solve, 300);
+  };
+  recognition.onerror = () => { stopRecording(); showToast('שגיאה'); };
+  recognition.start();
+}
+function stopRecording() {
+  isRecording = false;
+  const btn = document.getElementById('micBtn');
+  if (btn) btn.classList.remove('recording');
+  if (recognition) { try { recognition.stop(); } catch(e){} recognition = null; }
+}
+
+// PRO
+function openProModal() { 
+  if (!document.body.classList.contains('pro-active')) {
+    document.getElementById('proModal').classList.add('open');
+  }
+}
+function closeProModal() { document.getElementById('proModal').classList.remove('open'); }
+function activatePro() {
+  const code = document.getElementById('proCodeInput').value.trim().toUpperCase();
+  if (code !== 'MINDPRO2026') {
+    document.getElementById('proCodeError').style.display = 'block';
+    document.getElementById('proCodeInput').style.borderColor = '#ef4444';
+    return;
+  }
+  document.getElementById('proCodeError').style.display = 'none';
+  document.body.classList.add('pro-active');
+  document.getElementById('proBadge').style.display = 'inline-flex';
+  document.getElementById('proBadgeSidebar').style.display = 'inline-flex';
+  document.getElementById('upgradeBtn').style.display = 'none';
+  closeProModal();
+  showToast('✦ PRO activated!');
+  localStorage.setItem('mp_pro', '1');
+}
+// Check PRO on load
+window.addEventListener('load', () => {
+  if (localStorage.getItem('mp_pro') === '1') {
+    document.body.classList.add('pro-active');
+    document.getElementById('proBadge').style.display = 'inline-flex';
+    document.getElementById('proBadgeSidebar').style.display = 'inline-flex';
+    if (document.getElementById('upgradeBtn')) document.getElementById('upgradeBtn').style.display = 'none';
+  }
+});
+
+function toggleSidebar() { document.getElementById('sidebar').classList.toggle('open'); document.getElementById('overlay').classList.toggle('open'); }
+function closeSidebar() { document.getElementById('sidebar').classList.remove('open'); document.getElementById('overlay').classList.remove('open'); }
+function showToast(m) { const t = document.getElementById('toast'); t.textContent = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 2000); }
+
+document.getElementById('chatInp').addEventListener('input', function() {
+  document.getElementById('sendBtn').disabled = !this.value.trim() && !imgData;
+});
+
+const weatherCodes = {
+  0:'שמיים בהירים',1:'בהיר בעיקר',2:'מעונן חלקית',3:'מעונן',
+  45:'ערפל',48:'ערפל קפוא',
+  51:'טפטוף קל',53:'טפטוף',55:'טפטוף כבד',
+  61:'גשם קל',63:'גשם',65:'גשם כבד',
+  71:'שלג קל',73:'שלג',75:'שלג כבד',
+  80:'מטר קל',81:'מטר',82:'מטר כבד',
+  95:'סופת רעמים',96:'סופת רעמים עם ברד',99:'סופת רעמים חזקה'
+};
+
+function showWeather() {
+  closeSidebar();
+  document.getElementById('welcome').style.display = 'none';
+  document.getElementById('answerWrap').classList.remove('visible');
+  document.getElementById('weatherCard').classList.add('visible');
+  document.getElementById('weatherContent').style.display = 'none';
+  document.getElementById('weatherLoading').style.display = 'none';
+  setTimeout(() => document.getElementById('cityInput').focus(), 300);
+}
+
+async function searchCity() {
+  const city = document.getElementById('cityInput').value.trim();
+  if (!city) return;
+  document.getElementById('weatherLoading').style.display = 'block';
+  document.getElementById('weatherContent').style.display = 'none';
+
+  try {
+    // Geocode city name
+    const geo = await fetch(`https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(city)}&format=json&limit=1&accept-language=he`);
+    const geoData = await geo.json();
+    if (!geoData.length) throw new Error('עיר לא נמצאה');
+    const {lat, lon, display_name} = geoData[0];
+    const cityName = display_name.split(',')[0];
+    await fetchWeather(lat, lon, cityName);
+  } catch(e) {
+    document.getElementById('weatherLoading').textContent = 'עיר לא נמצאה, נסה שוב';
+  }
+}
+
+async function getMyLocation() {
+  document.getElementById('weatherLoading').style.display = 'block';
+  document.getElementById('weatherContent').style.display = 'none';
+  document.getElementById('weatherLoading').textContent = 'מאתר מיקום...';
+  try {
+    const pos = await new Promise((res, rej) => navigator.geolocation.getCurrentPosition(res, rej, {timeout:8000}));
+    const {latitude: lat, longitude: lon} = pos.coords;
+    let cityName = 'מיקומך';
+    try {
+      const geo = await fetch(`https://nominatim.openstreetmap.org/reverse?lat=${lat}&lon=${lon}&format=json&accept-language=he`);
+      const geoData = await geo.json();
+      cityName = geoData.address?.city || geoData.address?.town || geoData.address?.village || 'מיקומך';
+    } catch(e) {}
+    await fetchWeather(lat, lon, cityName);
+  } catch(e) {
+    document.getElementById('weatherLoading').textContent = 'לא ניתן לקבל מיקום';
+  }
+}
+
+async function fetchWeather(lat, lon, cityName) {
+  document.getElementById('weatherLoading').textContent = 'טוען...';
+  const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=temperature_2m,apparent_temperature,relative_humidity_2m,wind_speed_10m,weather_code,uv_index&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=auto&forecast_days=2`;
+  const r = await fetch(url);
+  const d = await r.json();
+  const c = d.current;
+  const daily = d.daily;
+
+  document.getElementById('wTemp').textContent = Math.round(c.temperature_2m);
+  document.getElementById('wFeels').textContent = Math.round(c.apparent_temperature);
+  document.getElementById('wHumidity').textContent = c.relative_humidity_2m;
+  document.getElementById('wWind').textContent = Math.round(c.wind_speed_10m);
+  document.getElementById('wUV').textContent = Math.round(c.uv_index || 0);
+  document.getElementById('wDesc').textContent = weatherCodes[c.weather_code] || 'לא ידוע';
+  document.getElementById('wCity').textContent = cityName;
+  document.getElementById('wTomMax').textContent = Math.round(daily.temperature_2m_max[1]);
+  document.getElementById('wTomMin').textContent = Math.round(daily.temperature_2m_min[1]);
+  document.getElementById('wTomDesc').textContent = weatherCodes[daily.weather_code[1]] || '';
+
+  document.getElementById('weatherLoading').style.display = 'none';
+  document.getElementById('weatherContent').style.display = 'block';
+}
+</script>
+</body>
+</html>
