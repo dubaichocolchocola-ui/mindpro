@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
@@ -1060,44 +1061,42 @@ async function solve() {
   const img = imgData; removeImage();
 
   try {
-    const OR_KEY = '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';
-    let msgContent = [];
-    if (img) msgContent.push({ type: 'image_url', image_url: { url: 'data:image/jpeg;base64,' + img } });
-    msgContent.push({ type: 'text', text: q || 'פתור/הסבר את התמונה צעד אחר צעד' });
-
-    // Detect language and add instruction
+    const GEMINI_KEY = 'AIzaSyB1zFbKUuSpljWJMAuap3SCdnMuwPXdgkw';
+    
+    // Build parts array for Gemini
+    let parts = [];
+    if (img) parts.push({ inline_data: { mime_type: 'image/jpeg', data: img } });
+    
     const langInstruction = q ? detectLang(q) : '';
-    const userMsg = img ? msgContent : (q || 'פתור/הסבר');
-    const userMsgWithLang = langInstruction ? 
-      (img ? [...msgContent, {type:'text', text: langInstruction}] : q + '\n\n' + langInstruction) 
-      : userMsg;
+    const userText = (q || 'פתור/הסבר את התמונה צעד אחר צעד') + (langInstruction ? '\n\n' + langInstruction : '');
+    parts.push({ text: userText });
 
-    // Add to conversation history
-    conversationHistory.push({ role: 'user', content: userMsgWithLang });
-    // Keep last 20 messages to avoid token limit
+    // Build conversation history for Gemini format
+    const geminiHistory = conversationHistory.map(m => ({
+      role: m.role === 'assistant' ? 'model' : 'user',
+      parts: [{ text: typeof m.content === 'string' ? m.content : (m.content.find?.(c=>c.type==='text')?.text || '') }]
+    }));
+
+    // Add current user message to history
+    conversationHistory.push({ role: 'user', content: userText });
     if (conversationHistory.length > 20) conversationHistory = conversationHistory.slice(-20);
 
-    const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+    const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_KEY}`, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'Bearer ' + OR_KEY,
-        'HTTP-Referer': 'https://illustrious-puppy-268e53.netlify.app',
-        'X-Title': 'MindPro'
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        model: 'google/gemini-2.0-flash-001',
-        max_tokens: 3000,
-        messages: [
-          { role: 'system', content: getSystemPrompt() },
-          ...conversationHistory
-        ]
+        system_instruction: { parts: [{ text: getSystemPrompt() }] },
+        contents: [
+          ...geminiHistory,
+          { role: 'user', parts }
+        ],
+        generationConfig: { maxOutputTokens: 3000 }
       })
     });
 
     const data = await res.json();
     if (!res.ok) throw new Error(JSON.stringify(data));
-    const answer = data.choices?.[0]?.message?.content || 'לא הצלחתי לקבל תשובה.';
+    const answer = data.candidates?.[0]?.content?.parts?.[0]?.text || 'לא הצלחתי לקבל תשובה.';
     lastAnswer = answer;
     conversationHistory.push({ role: 'assistant', content: answer });
 
